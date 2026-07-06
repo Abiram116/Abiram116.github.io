@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sree Abiram — Portfolio</title>
+<meta name="description" content="Sree Abiram — AI &amp; Data Science undergraduate. Projects in machine learning, deep learning and full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="#home" class="logo">SA<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Hyderabad, India</p>
+      <h1 class="reveal">
+        Hi, I'm <span class="accent">Sree Abiram</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        AI &amp; Data Science undergrad who likes teaching machines to see, sort and solve —
+        then wrapping it in a web app people can actually use.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="index">01</span>About</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm currently pursuing my B.Tech in Artificial Intelligence &amp; Data Science at
+          Koneru Lakshmaiah University, heading into my final year. Most of what I build sits
+          at the intersection of machine learning and software engineering — training a model
+          is only half the job, the other half is putting it in front of someone through a
+          working interface.
+        </p>
+        <p class="about-text reveal">
+          Lately that's meant spending time with deep learning — convolutional and
+          encoder-decoder architectures, GPU-accelerated training, and increasingly,
+          transformer-based approaches — alongside the full-stack Django and React Native
+          work that ships those ideas as real products.
+        </p>
+        <div class="fact-grid reveal">
+          <div class="fact-card">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">B.Tech, AI &amp; Data Science<br>KLU · 2023 – 2027</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Currently</span>
+            <span class="fact-value">Final-year undergrad</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Focus</span>
+            <span class="fact-value">Deep Learning &amp; Full-Stack Dev</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Based in</span>
+            <span class="fact-value">Hyderabad, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="index">02</span>Skills</h2>
+
+      <div class="skills-block reveal">
+        <h3 class="skills-subtitle">Languages</h3>
+        <div class="skill-row">
+          <div class="skill-chip">
+            <img src="assets/icons/python-icon.png" alt="" class="skill-icon">Python
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/java-icon.png" alt="" class="skill-icon">Java
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/c-icon.png" alt="" class="skill-icon">C
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-block reveal">
+        <h3 class="skills-subtitle">Frameworks &amp; Tools</h3>
+        <div class="skill-row">
+          <div class="skill-chip">
+            <img src="assets/icons/django-icon.png" alt="" class="skill-icon">Django
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/github-icon.png" alt="" class="skill-icon">GitHub
+          </div>
+          <div class="skill-chip skill-chip-plain">Node.js</div>
+          <div class="skill-chip skill-chip-plain">React Native</div>
+          <div class="skill-chip skill-chip-plain">Linux</div>
+          <div class="skill-chip skill-chip-plain">VS Code</div>
+          <div class="skill-chip skill-chip-plain">LaTeX</div>
+        </div>
+      </div>
+
+      <div class="skills-block reveal">
+        <h3 class="skills-subtitle">Also working with</h3>
+        <div class="skill-row">
+          <div class="skill-chip skill-chip-plain">TensorFlow</div>
+          <div class="skill-chip skill-chip-plain">Keras</div>
+          <div class="skill-chip skill-chip-plain">OpenCV</div>
+          <div class="skill-chip skill-chip-plain">NVIDIA CUDA</div>
+          <div class="skill-chip skill-chip-plain">Supabase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="index">03</span>Projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>Recipeasy</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p>Recipe management app for saving recipes, planning meals on a calendar, and
+             building shopping lists — with Google sign-in and GSAP-animated UI.</p>
+          <p class="project-stack">Python · Django · HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="https://github.com/Abiram116/Recipeasy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://recipeasy-i7h1.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>Handwritten Digit Recognition</h3>
+            <span class="project-tag">Deep Learning</span>
+          </div>
+          <p>An MNIST-trained digit prediction model wired into a Django app, so anyone
+             can upload a handwritten digit and get an instant prediction.</p>
+          <p class="project-stack">Python · TensorFlow · Django · HTML · CSS</p>
+          <div class="project-links">
+            <a href="https://github.com/Abiram116/mlproject2" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>LinSolverX</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p>A linear programming solver covering simplex, graphical, fractional and
+             transportation methods, built for working through optimization problems
+             with a clean, modern UI.</p>
+          <p class="project-stack">Python · Django · HTML · CSS</p>
+          <div class="project-links">
+            <a href="https://github.com/Abiram116/MathCourse" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://linsolverx.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>SpaceLearn</h3>
+            <span class="project-tag">Mobile App</span>
+          </div>
+          <p>A React Native productivity app for students — organize study material into
+             spaces and subspaces, chat with an AI tutor, summarize PDFs, and get
+             performance-based suggestions.</p>
+          <p class="project-stack">React Native · JavaScript · APIs · Supabase</p>
+          <div class="project-links">
+            <a href="https://github.com/Abiram116/SpaceLearn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>Image Colorization</h3>
+            <span class="project-tag">Deep Learning</span>
+          </div>
+          <p>A deep learning model that colorizes grayscale images using an
+             autoencoder with U-Net skip connections, GPU-accelerated on an RTX 4060.
+             Currently exploring transformer-based approaches to push it further.</p>
+          <p class="project-stack">Python · TensorFlow · Keras · OpenCV · NVIDIA CUDA</p>
+          <div class="project-links">
+            <a href="https://github.com/nandhithr6/Image-Colorization" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="index">04</span>Achievements</h2>
+      <div class="achievement-list">
+
+        <div class="achievement-item reveal">
+          <span class="achievement-year">2019</span>
+          <div>
+            <h3>LogIQids Logical Reasoning Olympiad</h3>
+            <p>Ranked 7th across Hyderabad in the First Stage of the Logical Reasoning Olympiad.</p>
+          </div>
+        </div>
+
+        <div class="achievement-item reveal">
+          <span class="achievement-year">2018</span>
+          <div>
+            <h3>Guinness World Record — Volunteer</h3>
+            <p>Volunteered in a Guinness World Record attempt, helping create a portrait of
+               Dr. APJ Abdul Kalam using Rubik's cubes.</p>
+          </div>
+        </div>
+
+        <div class="achievement-item reveal">
+          <span class="achievement-year">2024</span>
+          <div>
+            <h3>Linguaskill English Proficiency — B2</h3>
+            <p>Achieved a B2 grade in Linguaskill, Cambridge's English proficiency certification.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+      <h2 class="section-title reveal"><span class="index">05</span>Contact</h2>
+      <p class="contact-lede reveal">Have a project in mind, or just want to talk shop? My inbox is open.</p>
+      <a href="mailto:sreeabirammandava@gmail.com" class="btn btn-primary reveal">sreeabirammandava@gmail.com</a>
+      <div class="social-row reveal">
+        <a href="https://github.com/Abiram116" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="assets/icons/github-icon1.png" alt="" class="social-icon">GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/sree-abiram-mandava-86b5a528b/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="assets/icons/linkedin-icon.png" alt="" class="social-icon">LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Sree Abiram. Built and hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
