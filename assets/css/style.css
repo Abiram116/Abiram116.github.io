@@ -66,6 +66,11 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 
+/* the hero "LLMs" word already sits on a yellow marker, so give it a
+   contrasting selection colour instead of yellow-on-yellow */
+.marker::selection { background: var(--cobalt); color: #fffdf8; }
+.marker::-moz-selection { background: var(--cobalt); color: #fffdf8; }
+
 /* ---------- Tri-stripe motif ---------- */
 .stripe-top {
   position: fixed;
