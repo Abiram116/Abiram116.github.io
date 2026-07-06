@@ -54,8 +54,10 @@
       </div>
     </div>
     <div class="marquee hero-load" style="--i:6" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Python</span><i>✦</i><span>LLMs</span><i>✦</i><span>RAG</span><i>✦</i><span>LangChain</span><i>✦</i><span>AWS</span><i>✦</i><span>rockets</span><i>✦</i><span>cats</span><i>✦</i><span>BMW M4</span><i>✦</i><span>Bond movies</span><i>✦</i><span>Python</span><i>✦</i><span>LLMs</span><i>✦</i><span>RAG</span><i>✦</i><span>LangChain</span><i>✦</i><span>AWS</span><i>✦</i><span>rockets</span><i>✦</i><span>cats</span><i>✦</i><span>BMW M4</span><i>✦</i><span>Bond movies</span><i>✦</i>
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-group">
+          <span>Python</span><i>✦</i><span>LLMs</span><i>✦</i><span>RAG</span><i>✦</i><span>LangChain</span><i>✦</i><span>AWS</span><i>✦</i><span>rockets</span><i>✦</i><span>cats</span><i>✦</i><span>BMW M4</span><i>✦</i><span>Bond movies</span><i>✦</i>
+        </div>
       </div>
     </div>
   </section>
@@ -96,7 +98,7 @@
           </div>
           <div class="fact">
             <span class="fact-k">Fueled by</span>
-            <span class="fact-v">Rocket stories, cat videos<br>&amp; straight-six engines</span>
+            <span class="fact-v">Rocket stories, German engineering<br>&amp; relentless curiosity</span>
           </div>
         </div>
       </div>
@@ -117,6 +119,13 @@
         <span class="chip">LLMs</span>
         <span class="chip">RAG</span>
         <span class="chip">LangChain</span>
+        <span class="chip">Agentic workflows</span>
+        <span class="chip">Prompt engineering</span>
+        <span class="chip">FAISS &amp; vector search</span>
+        <span class="chip">Embeddings</span>
+        <span class="chip">Ollama</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">TensorFlow</span>
         <span class="chip">AWS</span>
         <span class="chip">Git</span>
         <span class="chip">React</span>
@@ -274,36 +283,73 @@
         </p>
         <div class="crew-row">
           <figure class="snap reveal" style="--tilt:-3deg">
-            <img src="assets/photos/cat.jpg" alt="A cat" loading="lazy">
-            <figcaption>Chief Nap Officer</figcaption>
+            <img src="assets/photos/cat.jpg" alt="A cat in an orange hoodie and sunglasses, holding flowers" loading="lazy">
+            <figcaption>Chief Style Officer — dresses better than I do</figcaption>
           </figure>
           <figure class="snap reveal" style="--tilt:2deg">
-            <img src="assets/photos/cow.jpg" alt="A cow" loading="lazy">
-            <figcaption>Head of Calm</figcaption>
+            <img src="assets/photos/cow.jpg" alt="A cow grinning at the camera" loading="lazy">
+            <figcaption>Head of Optimism — has never had a bad day</figcaption>
           </figure>
           <figure class="snap reveal" style="--tilt:-2deg">
-            <img src="assets/photos/monkey.jpg" alt="A monkey" loading="lazy">
-            <figcaption>Director of Chaos</figcaption>
+            <img src="assets/photos/monkey.jpg" alt="A monkey in a cowboy hat and suit, behind the wheel" loading="lazy">
+            <figcaption>Executive Chairman — drives himself to meetings</figcaption>
           </figure>
         </div>
       </div>
 
-      <!-- Watchlist + games -->
+      <!-- Watchlist -->
       <div class="offline-block">
-        <h3 class="offline-h reveal">Rewatch list &amp; side quests</h3>
+        <h3 class="offline-h reveal">The rewatch list</h3>
         <p class="offline-p reveal">
           Sci-fi and action-adventure are home turf. The Daniel Craig era of Bond is
-          unforgettable, Mission: Impossible never misses, and Transformers has my
-          inner child on retainer. When the credits roll, I'm probably gaming —
-          I love games, full stop.
+          unforgettable, Mission: Impossible never misses, and Transformers has been
+          with me since childhood. But the one that started it all is
+          <em>Sahasam</em> — a Telugu adventure where two strangers cross into
+          Pakistan: she for a temple and her devotion, he for a treasure he's
+          convinced his grandfather hid there. Childhood favorite, still holds up.
         </p>
         <div class="chip-row reveal">
           <span class="chip chip-fun">James Bond — Craig era</span>
           <span class="chip chip-fun">Mission: Impossible</span>
           <span class="chip chip-fun">Transformers</span>
           <span class="chip chip-fun">Rocketry</span>
+          <span class="chip chip-fun">Sahasam</span>
           <span class="chip chip-fun">Anything sci-fi</span>
-          <span class="chip chip-fun">🎮 Gaming</span>
+        </div>
+      </div>
+
+      <!-- Game shelf -->
+      <div class="offline-block">
+        <h3 class="offline-h reveal">The game shelf</h3>
+        <p class="offline-p reveal">
+          When the credits roll, I'm gaming. Story-driven single-player is my lane —
+          these six own permanent shelf space in my head.
+        </p>
+        <div class="shelf">
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/god-of-war.jpg" alt="God of War (2018) cover art" loading="lazy">
+            <figcaption>God of War (2018)</figcaption>
+          </figure>
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/the-last-of-us.jpg" alt="The Last of Us Part I cover art" loading="lazy">
+            <figcaption>The Last of Us Part I</figcaption>
+          </figure>
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/uncharted.jpg" alt="Uncharted 4: A Thief's End cover art" loading="lazy">
+            <figcaption>Uncharted 4: A Thief's End</figcaption>
+          </figure>
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/wukong.jpg" alt="Black Myth: Wukong key art" loading="lazy">
+            <figcaption>Black Myth: Wukong</figcaption>
+          </figure>
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/silksong.jpg" alt="Hollow Knight: Silksong key art" loading="lazy">
+            <figcaption>Hollow Knight: Silksong</figcaption>
+          </figure>
+          <figure class="shelf-item reveal">
+            <img src="assets/photos/games/re9.jpg" alt="Resident Evil 9 cover art" loading="lazy">
+            <figcaption>Resident Evil 9</figcaption>
+          </figure>
         </div>
       </div>
     </div>

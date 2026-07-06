@@ -14,6 +14,24 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Marquee: clone the group until the track spans 2× the viewport,
+// so the CSS -50% shift loops seamlessly on any screen width
+const marqueeTrack = document.getElementById('marqueeTrack');
+const baseGroup = marqueeTrack.querySelector('.marquee-group');
+
+function fillMarquee() {
+  marqueeTrack.querySelectorAll('.marquee-group:not(:first-child)').forEach((g) => g.remove());
+  const copies = Math.max(2, Math.ceil((window.innerWidth * 2) / baseGroup.offsetWidth)) - 1;
+  for (let i = 0; i < copies; i++) {
+    const clone = baseGroup.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    marqueeTrack.appendChild(clone);
+  }
+}
+
+fillMarquee();
+window.addEventListener('resize', fillMarquee);
+
 // Scroll reveal — stagger siblings that enter together
 const revealEls = document.querySelectorAll('.reveal');
 

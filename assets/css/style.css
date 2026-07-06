@@ -61,6 +61,11 @@ img { max-width: 100%; display: block; }
   border-radius: 4px;
 }
 
+::selection {
+  background: var(--sun);
+  color: var(--ink);
+}
+
 /* ---------- Tri-stripe motif ---------- */
 .stripe-top {
   position: fixed;
@@ -223,22 +228,30 @@ img { max-width: 100%; display: block; }
 
 .marquee-track {
   display: flex;
+  width: max-content;
+  animation: scroll-x 36s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
   align-items: center;
   gap: 28px;
-  width: max-content;
-  animation: scroll-x 30s linear infinite;
+  padding-right: 28px;
+  flex: none;
   font-family: var(--font-mono);
   font-size: 0.9rem;
   color: var(--muted);
   white-space: nowrap;
 }
 
-.marquee-track i {
+.marquee-group i {
   font-style: normal;
   color: var(--coral);
   font-size: 0.7rem;
 }
 
+/* script.js clones .marquee-group until the track spans 2× the
+   viewport, so a -50% shift always loops with no gap */
 @keyframes scroll-x {
   to { transform: translateX(-50%); }
 }
@@ -620,6 +633,40 @@ img { max-width: 100%; display: block; }
   padding-top: 10px;
 }
 
+/* ---------- Game shelf ---------- */
+.shelf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 22px;
+}
+
+.shelf-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.25s ease;
+}
+
+.shelf-item:hover { transform: translateY(-6px); }
+
+.shelf-item img {
+  height: clamp(180px, 24vw, 250px);
+  width: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 22px -10px rgba(32, 48, 59, 0.35);
+  object-fit: contain;
+}
+
+.shelf-item figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
 /* ---------- Contact ---------- */
 .section-contact {
   background: var(--ink);
@@ -677,7 +724,7 @@ img { max-width: 100%; display: block; }
   .hero-load, .reveal { opacity: 1; transform: none; animation: none; transition: none; }
   .marker::before { transform: rotate(-1.2deg) scaleX(1); animation: none; }
   .marquee-track { animation: none; }
-  .chip, .snap, .photo-card, .feature-card, .archive-card, .btn { transition: none; }
+  .chip, .snap, .photo-card, .feature-card, .archive-card, .btn, .shelf-item { transition: none; }
 }
 
 /* ---------- Mobile ---------- */
@@ -718,4 +765,7 @@ img { max-width: 100%; display: block; }
   .btn-big { padding: 16px 34px; font-size: 1.05rem; }
 
   .social-row { gap: 22px; flex-wrap: wrap; }
+
+  .shelf { gap: 16px; justify-content: center; }
+  .shelf-item img { height: 150px; }
 }
